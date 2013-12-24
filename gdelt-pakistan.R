@@ -9,7 +9,6 @@ library(ggmap)
 library(countrycode)
 
 # downloading and subsetting data, using the tutorial from http://gdeltblog.wordpress.com/2013/10/03/gdelttools-r-package-to-download-subset-and-normalize-gdelt-data/
-
 gdelt.subset <- GetGDELT(start.date="2010-01-01", end.date="2013-12-22",
                          filter=list(EventCode="19*", ActionGeo_CountryCode="PK"), 
                          allow.wildcards=TRUE) 
